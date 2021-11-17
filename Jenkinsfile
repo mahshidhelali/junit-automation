@@ -33,7 +33,10 @@ pipeline {
 
         stage('Deploy'){
             steps{
-                sh 'cd src/ ; java App' 
+                bat """
+                cd C://ProgramData//Jenkins//.jenkins//workspace//JunitAutomation//src 
+                java App
+                """
             }
         }
     }
