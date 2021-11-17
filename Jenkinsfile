@@ -32,7 +32,7 @@ pipeline {
 
         stage('Deploy'){
             steps{
-                junit "C://ProgramData//Jenkins//.jenkins//workspace//JunitAutomation//src//reports//TEST-junit-jupiter.xml"
+                junit "src//reports//TEST-junit-jupiter.xml"
                 bat """
                 cd C://ProgramData//Jenkins//.jenkins//workspace//JunitAutomation//src 
                 java App
