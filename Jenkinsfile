@@ -13,10 +13,11 @@ pipeline {
 
         stage('Build'){
             steps{
-                bat ""
+                bat """
+                md lib
                 cd C://ProgramData//Jenkins//.jenkins//workspace//JunitAutomation//src 
                 javac -cp "C://Users//mahshidhelalimo//Downloads//junit-automation-main//junit-automation-main//lib//junit-platform-console-standalone-1.7.0-all.jar" CarTest.java Car.java App.java
-                ""
+                """
             }
         }
 
