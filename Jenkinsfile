@@ -25,9 +25,8 @@ pipeline {
             steps{
                 bat """
                 cd C://ProgramData//Jenkins//.jenkins//workspace//JunitAutomation//src
-                java -jar C://Users//mahshidhelalimo//Downloads//junit-automation-main//junit-automation-main//lib//junit-platform-console-standalone-1.7.0-all.jar -cp "." --select-class CarTest --reports-dir='reports'
+                java -jar C://Users//mahshidhelalimo//Downloads//junit-automation-main//junit-automation-main//lib//junit-platform-console-standalone-1.7.0-all.jar -cp "." --select-class CarTest --reports-dir="reports"
                 """
-                
             }
         }
 
