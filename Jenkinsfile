@@ -27,7 +27,7 @@ pipeline {
         stage('Test'){
             steps{
                 bat "cd C://ProgramData//Jenkins//.jenkins//workspace//JunitAutomation//src"
-                bat "java -jar C://Users//mahshidhelalimo//Downloads//junit-automation-main//junit-automation-main//lib//junit-platform-console-standalone-1.7.0-all.jar -cp "." --select-class CarTest --reports-dir='reports'"
+                bat "java -jar C://Users//mahshidhelalimo//Downloads//junit-automation-main//junit-automation-main//lib//junit-platform-console-standalone-1.7.0-all.jar -cp "." --select-class CarTest --reports-dir="reports""
                 junit 'src/reports/*-jupiter.xml'
             }
         }
